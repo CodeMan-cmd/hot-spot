@@ -1,0 +1,8 @@
+# .gitignore
+# Created by: https://www.toptal.com/developers/gitignore/api/python
+
+.vscode
+cert.pem
+key.pem
+
+# PyInstaller

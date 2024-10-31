@@ -1,0 +1,175 @@
+
+.container{
+  display: flex;
+}
+.center {
+    width: 88%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .col-01 {
+    cursor: pointer;
+    background-color: #1f2025;
+    width: calc(100vw/4);
+    height: calc(100vh/2);
+    padding: 10px;
+    border-radius: 3%;
+  }
+
+  .row-01 {
+    height: 10%;
+    font-weight: bolder;
+  }
+
+  .row-02 {
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    overflow-y: auto;
+  }
+
+  .row-row-02 {
+    cursor: pointer;
+    display: flex;
+    /* 行高是字体的2倍 */
+    line-height: 2;
+  }
+
+  .col-col-01 {
+    width: 3%;
+    text-align: center;
+  }
+
+  .col-col-02 {
+    width: 2%;
+    text-align: center;
+  }
+
+  .col-col-03 {
+    width: 80%;
+    text-align: start;
+  }
+
+  .col-col-04 {
+    width: 15%;
+    text-align: start;
+    text-wrap: nowrap;
+  }
+
+  .bilibili {
+    color: #00a1d6;
+    font-size: 20px;
+    font-weight: bolder;
+  }
+
+  .douyin {
+    color: #ee1e2f;
+    font-size: 20px;
+    font-weight: bolder;
+  }
+
+  .zhihu {
+    color: #0084ff;
+    font-size: 20px;
+    font-weight: bolder;
+  }
+
+  .weibo {
+    color: #ff4d4d;
+    font-size: 20px;
+    font-weight: bolder;
+  }
+
+  .history {
+    color: #ff4d4d;
+    font-size: 20px;
+    font-weight: bolder;
+  }
+  .left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 8%;
+    font-weight: bolder;
+    font-size: 1rem;
+    row-gap: 8px;
+  }
+  .left-row-01{
+    cursor: pointer;
+  }
+
+ /* 整体容器样式 */
+.daily-quote-container {
+  width: max-content; /* 设置容器宽度，可以根据实际情况调整 */
+  height: max-content;
+  margin: 0 auto; /* 让容器在页面中水平居中 */
+  padding: 20px;
+  background-color: #18191f; /* 设置为指定的深色背景颜色 */
+  border-radius: 10px; /* 边框圆角 */
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 加深阴影效果，增强立体感 */
+}
+
+/* 每日一言文本样式 */
+.daily-quote-text {
+  font-size: 18px; /* 字体大小 */
+  line-height: 1.5; /* 行高，让文字排版更舒适 */
+  color: #ffffff; /* 文字颜色设置为白色，与深色背景形成对比 */
+  text-align: center; /* 文本居中对齐 */
+  text-wrap: normal;
+  font-family: Arial, sans-serif; /* 设置字体，可根据喜好更换 */
+}
+
+/* 如果有引用来源的样式设置 */
+.daily-quote-source {
+  font-size: 14px; /* 来源文字相对小一些 */
+  color: #cccccc; /* 颜色稍暗些以作区分，但比背景色亮一些 */
+  text-align: right; /* 靠右对齐 */
+  margin-top: 10px; /* 与上面的文本有一定间距 */
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    height: 100% !important;
+    width: 99%!important;
+  }
+  .col-01 {
+    cursor: pointer;
+    background-color: #1f2025;
+    width: 100%;
+    height: 299px;
+    padding: 10px;
+    border-radius: 3%;
+  }
+  .left{
+    display: none;
+  }
+  .center{
+    width: 100%;
+    margin: 10px;
+  }
+
+  .col-01{
+    /* 隐藏滚动条 */
+    -webkit-tap-highlight-color: transparent;
+  }
+  .daily-quote-container{
+    width: 70%;
+    background-color: null; /* 设置为指定的深色背景颜色 */
+    border-radius: null; /* 边框圆角 */
+    box-shadow: null; /* 加深阴影效果，增强立体感 */
+  }
+
+  ::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    background: transparent;
+  }
+  
+}
+
