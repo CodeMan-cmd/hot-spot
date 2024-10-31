@@ -154,10 +154,10 @@
     margin: 10px;
   }
 
-  .col-01{
-    /* 隐藏滚动条 */
-    -webkit-tap-highlight-color: transparent;
+  * {
+    -webkit-tap-highlight-color: transparent; /* 去除点击时的背景色 */
   }
+ 
   .daily-quote-container{
     width: 70%;
     background-color: null; /* 设置为指定的深色背景颜色 */
