@@ -21,7 +21,6 @@ body {
   font-kerning: auto;  
   /* 当设为auto时，浏览器会依照字体大小自动对字体的形状和细节进行调整 */
   font-optical-sizing: auto;
- 
 }
 
 #app {
