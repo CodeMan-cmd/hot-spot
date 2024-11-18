@@ -176,7 +176,7 @@
 <script src="./lib/vue.js"></script>
 <script>
 
-  var n = new Noty();
+  let n = new Noty();
 
   function showConfirmationNoty(message, type, onConfirm, onCancel) {
     n.options.text = message;
@@ -195,7 +195,7 @@
     n.show();
   }
 
-  var app = new Vue({
+  let app = new Vue({
     el: "#app",
     data: {
       urlMaps: new Map([
@@ -203,7 +203,7 @@
         ['say', 'https://uapis.cn/api/say'],                              // 每日一句
         ['search_bilibili', 'https://search.bilibili.com/all?keyword='],  // 哔哩哔哩搜索
         ['search_douyin', 'https://www.douyin.com/search/'],              // 抖音搜索
-        ['ikun', 'https://uapis.cn/api/imgapi/bq/ikun.php']
+        ['ikun', 'https://uapis.cn/api/imgapi/bq/ikun.php']               // ikun表情包
       ]),
       say: "loadding....",
       header: [
